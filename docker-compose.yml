@@ -1,0 +1,6 @@
+services:
+  weblogcat:
+    build: .
+    ports:
+      - "8555:80"
+    restart: unless-stopped

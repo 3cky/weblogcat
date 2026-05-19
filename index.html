@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebLogcat</title>
+</head>
+<body>
+  <header id="toolbar">
+    <div class="row">
+      <button id="btn-connect">Connect</button>
+      <button id="btn-disconnect" disabled>Disconnect</button>
+      <span id="status" class="status">Not connected</span>
+      <div class="spacer"></div>
+      <button id="btn-clear">Clear</button>
+      <button id="btn-autoscroll" class="toggle active">Auto-scroll</button>
+      <button id="btn-save" disabled>Save</button>
+    </div>
+    <div class="row filters">
+      <span class="label">Level:</span>
+      <div id="level-btns">
+        <button class="lvl-btn" data-priority="2">V</button>
+        <button class="lvl-btn" data-priority="3">D</button>
+        <button class="lvl-btn" data-priority="4">I</button>
+        <button class="lvl-btn" data-priority="5">W</button>
+        <button class="lvl-btn" data-priority="6">E</button>
+        <button class="lvl-btn" data-priority="7">F</button>
+      </div>
+      <span class="label">Tag:</span>
+      <input id="tag-filter" type="text" placeholder="filter by tag" autocomplete="off" spellcheck="false" />
+      <span class="label">Search:</span>
+      <input id="search-input" type="text" placeholder="highlight text" autocomplete="off" spellcheck="false" />
+      <span id="entry-count" class="count">0 entries</span>
+    </div>
+  </header>
+  <main id="log-pane"></main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
