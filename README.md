@@ -2,6 +2,8 @@
 
 Minimalistic browser-based Android logcat viewer. Streams device logs over **WebUSB** — no ADB binary or USB drivers required.
 
+Try it out at https://3cky.github.io/weblogcat/
+
 **Requires Chrome or Edge** (WebUSB is Chromium-only).
 
 ## Usage
