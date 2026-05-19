@@ -13,8 +13,8 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@yume-chan/adb": "^0.0.24",
-    "@yume-chan/adb-daemon-webusb": "^0.0.24",
-    "@yume-chan/android-bin": "^0.0.24"
+    "@yume-chan/adb": "^2.6.0",
+    "@yume-chan/adb-daemon-webusb": "^2.3.2",
+    "@yume-chan/android-bin": "^2.1.0"
   }
 }
