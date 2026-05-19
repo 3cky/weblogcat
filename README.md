@@ -1,6 +1,6 @@
 # WebLogcat
 
-Browser-based Android logcat viewer. Streams device logs over **WebUSB** — no ADB binary or USB drivers required.
+Minimalistic browser-based Android logcat viewer. Streams device logs over **WebUSB** — no ADB binary or USB drivers required.
 
 **Requires Chrome or Edge** (WebUSB is Chromium-only).
 
@@ -35,3 +35,7 @@ npm run build    # production build → dist/
 ```bash
 docker compose up -d   # http://localhost:8555
 ```
+
+## Credits
+
+ADB protocol implementation by [yume-chan/ya-webadb](https://github.com/yume-chan/ya-webadb).
